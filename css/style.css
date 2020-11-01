@@ -1,0 +1,93 @@
+.section-rows {
+  height: 100%;
+}
+
+.left-column {
+  height: 100%;
+  min-height: 595px;
+  background-color: rgb(8, 19, 85);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/bg.jpg");
+}
+
+.right-column {
+  height: 100%;
+  min-height: 595px;
+  background: #fff;
+}
+
+.right-section {
+  margin-top: 30px !important;
+}
+
+.round-input {
+  border-radius: 30px;
+}
+
+.round-input:hover {
+  border: 1px solid rgb(8, 19, 85);
+}
+
+.login-btn {
+  background: rgb(8, 19, 85);
+  color: #fff;
+}
+
+.login-btn:hover {
+  background: #fff;
+  color: rgb(8, 19, 85);
+}
+
+.signup-container {
+  margin-left: 40px;
+  margin-top: 70px;
+  padding: 0 90px;
+}
+
+.form-header {
+  color: rgb(8, 19, 85);
+  text-align: center;
+}
+
+.form-header-left {
+  color: rgb(8, 19, 85);
+  text-align: left;
+  padding-left: 25px;
+}
+
+.text-image {
+  margin-left: 20px;
+  margin-top: 150px;
+  padding: 20px;
+  color: #fff;
+}
+
+.right-section {
+  min-height: 100vh;
+}
+
+.left-column {
+  min-height: 100vh;
+}
+
+body {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  height: 90%;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+
+h3 {
+  color: rgb(8, 19, 85);
+  font-size: 20px;
+  text-align: center;
+}
+
+a:hover {
+  color: rgb(8, 19, 85) !important;
+  font-weight: bold !important;
+}
