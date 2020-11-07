@@ -29,12 +29,12 @@
                 </div>
                 <div class="col-md-6 right-column right-section">
                     <div class="row">
-                        <form method="POST" class="signup-container">
+                        <form class="signup-container" method="POSt" action="/user_login">
                             <div class="col-md-4 col-xs-8 col-md-12 form-group ">
-                                <input type="text" class="form-control round-input" placeholder="Email">
+                                <input type="email" class="form-control round-input" name="login_email" placeholder="Email">
                             </div>
                             <div class="col-md-4 col-xs-8 col-md-12 form-group ">
-                                <input type="text" class="form-control round-input" placeholder="Password">
+                                <input type="password" class="form-control round-input" name="login_password" placeholder="Password">
                             </div>
 
                             <div class="col-md-3 col-xs-8 col-md-12 form-group">
@@ -45,26 +45,25 @@
                     </div>
                     <div class="row section-rows">
                         <div class="col-md-12">
-                            <form method="POST" action="index.html" class="signup-container">
+                            <form action="/user_create" method="POST" class="signup-container">
                                 <div class="form-header">
                                     <h3>Sign Up Here</h3>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="First Name">
+                                    <input type="text" class="form-control" name="firstname" placeholder="First Name">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Last Name">
+                                    <input type="text" class="form-control" name="lastname" placeholder="Last Name">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email">
+                                    <input type="text" class="form-control" name="email" placeholder="Email">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" placeholder="Password">
+                                    <input type="password" class="form-control" name="password" placeholder="Password">
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <input type="submit" class="form-control round-input login-btn " value="Sign Up">
-                                    <div class=" row form-header-left"><a href="#">Have an account?<a href="#">Login
-                                            </a></a></div>
+                                    <button type="submit" class="form-control round-input login-btn "  id="registerStudentBtn" >Sign Up</button>
+                                    <div class="row form-header-left"><a href="#">Have an account?Login</a></div>
                                 </div>
                             </form>
                         </div>
@@ -73,9 +72,48 @@
             </div>
         </section>
     </div>
+
+  
+
 </body>
-<footer>
-    <center><span> &copy; Copyright 2020</span></center>
-</footer>
+
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><i class="ion-ios-arrow-right"></i> <a href="#intro">Home</a></li>
+                        <li><i class="ion-ios-arrow-right"></i> <a href="#about">About us</a></li>
+                        <li><i class="ion-ios-arrow-right"></i> <a href="#services">Services</a></li>
+                        <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
+                        <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>
+                        Labone<br>
+                        Adom Street<br>
+                        Ghana <br>
+                        <strong>Phone:</strong> +233 1234 567 21<br>
+                        <strong>Email:</strong> Online@gmail.com<br>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            <center><span> &copy; Copyright 2020. All Rights Reserved</span></center>
+        </div>
+
+    </div>
+</footer><!-- #footer -->
 
 </html>

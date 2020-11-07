@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exam Online</title>
+    <link rel="stylesheet" href="/QuizApp/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id = "home" class="flex-center flex-column">
+        <h1 id="subject"> </h1>
+        <form method="GET" action="/startexam">
+        <input hidden type="text" value="" name="sub" id="sub" />
+        <input type="submit" value="START EXAM" class="btn"/>
+        </form>
+        <a class="btn" onclick="goBack()">Quit</a>
+      </div>
+    </div>
+  <!----   href="/QuizApp/game.html?"  onclick="location.href=this.href+newurl;return false;"-->
+        <script type="text/javascript" >
+        document.ready(getURL());
+
+          function goBack() {
+            window.history.back();
+          }
+
+          function getURL() {
+            fullurl = window.location.href;
+
+            url = fullurl.split(/[\s/]+/);
+
+            newurl = url[url.length - 1];
+
+
+            if (newurl == "history") {
+              subject = 'HISTORY'
+
+            } else if (newurl == "techscience") {
+              subject = 'SCIENCE IN TECHNOLOGY'
+            }
+            else if (newurl == "genknow") {
+              subject = 'GENERAL KNOWLEDGE'
+            }
+            else if (newurl == "geography") {
+              subject = 'GEOGRAPHY'
+            }
+            var h1 = document.getElementById('subject');
+            h1.innerHTML = subject.toUpperCase();
+
+            var inp = document.getElementById('sub');
+            inp.value = subject.toLowerCase();
+
+          }
+         
+        </script>
+  </body>
+<html>
